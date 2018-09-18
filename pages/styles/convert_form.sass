@@ -1,0 +1,43 @@
+.convert-form
+  &__input-container 
+    padding: 6px
+    height: 43px
+    border-radius: 5px
+    border: 4px solid #212b32
+    background-color: #ffffff
+    display: flex
+    &__input 
+      flex-grow: 1
+      font-size: 16px
+      font-weight: 400
+    &__label
+      flex-grow: 1
+      display: flex
+      &::before 
+        content: ' '
+        opacity: 0.3
+        display: block
+        width: 19px
+        height: 19px
+        // background-image: url('../images/link.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        margin: 12px 11px 0px 10px 
+  
+  &__format-container
+    display: flex 
+    justify-content: flex-end
+    margin: 13px 0px 26px 0px 
+    &__radio 
+      margin-left: 33px
+  
+  &__notice
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    line-height: 36px
+    text-align: right
+    margin-top: 10px
+    &__link
+      color: #fff
+      text-decoration: underline

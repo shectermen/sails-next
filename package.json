@@ -1,0 +1,41 @@
+{
+  "name": "next-react-sails",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.3",
+    "@zeit/next-sass": "^0.2.0",
+    "async": "2.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "isomorphic-unfetch": "^2.1.1",
+    "next": "^6.1.1",
+    "next-compose-plugins": "^2.1.1",
+    "next-images": "^0.10.6",
+    "node-sass": "^4.9.3",
+    "password-hash": "^1.2.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "sails": "^1.0.2",
+    "sails-hook-next": "^2.0.0",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0",
+    "sails-postgresql": "^1.0.1"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "author": "admin",
+  "license": "",
+  "engines": {
+    "node": ">=10.9"
+  }
+}

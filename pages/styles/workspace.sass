@@ -1,0 +1,43 @@
+.workspace
+  padding: 16px 0px 16px 0px 
+  background-color: #f4f3f3
+  &__container 
+    flex-wrap: nowrap
+    justify-content: space-between
+    .content-ads
+      margin: 26px 0px 0px 0px 
+  &__content 
+    max-width: 595px
+
+.instructions
+  flex-direction: column
+  align-items: center
+  padding-top: 20px
+  li 
+    white-space: nowrap
+  h2
+    margin-bottom: 26px
+  ol 
+    margin: 0px 0px 50px 0px 
+    counter-reset: counter
+    li
+      color: #433f3e
+      font-size: 13px
+      font-weight: 400
+      line-height: 22px
+      list-style: none
+      margin-bottom: 8px
+      &:before 
+        counter-increment: counter
+        border: 1px solid 
+        content: counter(counter)
+        color: #509e01
+        display: inline-block
+        text-align: center
+        line-height: normal
+        height: auto
+        width: auto
+        margin: 0 10px 0 0
+        padding: 0 4px
+        border-radius: 100%
+      
